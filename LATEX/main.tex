@@ -1,0 +1,44 @@
+\documentclass[a4paper, 11 pt]{report}
+
+\usepackage[english]{babel}
+\usepackage{color}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    linktoc=all,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=blue
+}
+
+
+\usepackage[a4paper,bindingoffset=0.2in,%
+            left=1in,right=1in,top=1.5in,bottom=1.5in,%
+            footskip=.25in]{geometry}
+
+\newcommand{\shellcmd}[1]{\indent\indent\texttt{\small\$ #1}}
+
+\pagenumbering{roman}
+
+% -------------------------------------------------------------------------------------
+% BEGIN DOCUMENT
+% -------------------------------------------------------------------------------------
+\begin{document}
+\title{\Huge Running SU2 in a Docker container}
+\author{Tommaso Bellosta}
+\maketitle
+%\pagestyle{empty}
+
+
+\pagenumbering{arabic}
+% -------------------------------------------------------------------------------------
+% INTRODUCTION
+% -------------------------------------------------------------------------------------
+\input{Chapters/Introduction.tex}
+\newpage
+
+% -------------------------------------------------------------------------------------
+% END DOCUMENT
+% -------------------------------------------------------------------------------------
+\end{document}
